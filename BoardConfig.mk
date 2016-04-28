@@ -14,7 +14,7 @@
 
 include device/sony/kitakami/PlatformConfig.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := E6853
+TARGET_BOOTLOADER_BOARD_NAME := E6883
 
 #Kernel
 TARGET_KERNEL_CONFIG := cyanogen_kitakami_satsuki_defconfig

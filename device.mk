@@ -57,7 +57,11 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=480 \
-    ro.usb.pid_suffix=1DB
+    ro.usb.pid_suffix=1DB \
+	persist.radio.multisim.config=dsds \
+	persist.multisim.config=dsds \
+	telephony.lteOnCdmaDevice=0 \
+	ro.telephony.default_network=0,1
 
 # Dalvik VM specific for devices with 2048 MB of RAM (While the E6853 has more RAM, this setting is recommended)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)

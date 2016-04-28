@@ -20,6 +20,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 PRODUCT_NAME := full_satsuki
 PRODUCT_DEVICE := satsuki
-PRODUCT_MODEL := E6853
+PRODUCT_MODEL := E6883
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
