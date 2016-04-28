@@ -32,18 +32,23 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>64</item>
-        <item>128</item>
-        <item>170</item>
-        <item>220</item>
-        <item>256</item>
-        <item>384</item>
-        <item>512</item>
-        <item>768</item>
-        <item>1024</item>
-        <item>1536</item>
-        <item>2048</item>
-        <item>4096</item>
+		<item>1</item>
+		<item>8</item>
+		<item>24</item>
+		<item>64</item>
+		<item>128</item>
+		<item>170</item>
+		<item>220</item>
+		<item>256</item>
+		<item>384</item>
+		<item>512</item>
+		<item>768</item>
+		<item>1024</item>
+		<item>1536</item>
+		<item>2048</item>
+		<item>2560</item>
+		<item>3584</item>
+		<item>4095</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -51,12 +56,23 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>4</item>   <!-- 0-255 -->
-        <item>26</item>   <!-- 255-510 -->
-        <item>65</item>   <!-- 510-1024 -->
-        <item>135</item>   <!-- 1024-2047 -->
-        <item>200</item>   <!-- 2047-4095 -->
-        <item>255</item>   <!-- 4095+ -->
+		<item>1</item>   <!-- 0-8 -->
+		<item>2</item>   <!-- 8-24 -->
+		<item>4</item>   <!-- 24-64 -->
+		<item>8</item>   <!-- 64-128 -->
+		<item>24</item>   <!-- 128-170 -->
+		<item>32</item>   <!-- 170-220 -->
+		<item>46</item>   <!-- 220-256 -->
+		<item>65</item>   <!-- 256-384 -->
+		<item>80</item>   <!-- 384-512 -->
+		<item>100</item>   <!-- 512-768 -->
+		<item>130</item>   <!-- 768-1024 -->
+		<item>150</item>   <!-- 1024-1536 -->
+		<item>170</item>   <!-- 1536-2048 -->
+		<item>190</item>   <!-- 2048-2560 -->
+		<item>220</item>   <!-- 2560-3584 -->
+		<item>254</item>   <!-- 3584-4094 -->
+		<item>255</item>   <!-- 4095+ -->
     </integer-array>
 
     <!-- Array of output values for button backlight corresponding to the LUX values
