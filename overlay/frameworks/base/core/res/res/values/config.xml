@@ -52,9 +52,9 @@
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-         This must be overridden in platform specific overlays -->
+		in the config_autoBrightnessLevels array.  This array should have size one greater
+		than the size of the config_autoBrightnessLevels array.
+		This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
 		<item>1</item>   <!-- 0-8 -->
 		<item>2</item>   <!-- 8-24 -->
@@ -76,32 +76,32 @@
     </integer-array>
 
     <!-- Array of output values for button backlight corresponding to the LUX values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-         This must be overridden in platform specific overlays -->
+		in the config_autoBrightnessLevels array.  This array should have size one greater
+		than the size of the config_autoBrightnessLevels array.
+		This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessButtonBacklightValues" />
-
+ 
     <!-- Minimum screen brightness setting allowed by the power manager.
-         The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">10</integer>
+		The user is forbidden from setting the brightness below this level. -->
+    <integer name="config_screenBrightnessSettingMinimum">4</integer> <!-- 24 -->
+    
+	<!-- Maximum screen brightness allowed by the power manager.
+		The user is forbidden from setting the brightness above this level. -->
+	<integer name="config_screenBrightnessSettingMaximum">255</integer> <!-- 4095 -->
 
-    <!-- Maximum screen brightness allowed by the power manager.
-         The user is forbidden from setting the brightness above this level. -->
-    <integer name="config_screenBrightnessSettingMaximum">255</integer> <!-- 4095 -->
-
-    <!-- Default screen brightness setting.
-         Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">208</integer>
+	<!-- Default screen brightness setting.
+		Must be in the range specified by minimum and maximum. -->
+	<integer name="config_screenBrightnessSettingDefault">170</integer> <!-- 2048 -->
 
     <!-- Screen brightness used to dim the screen when the user activity
-         timeout expires.  May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">0</integer>
+		timeout expires.  May be less than the minimum allowed brightness setting
+		that can be set by the user. -->
+    <integer name="config_screenBrightnessDim">4</integer> <!-- 24 -->
 
-    <!-- Screen brightness used to dim the screen while dozing in a very low power state.
-         May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
-    <integer name="config_screenBrightnessDoze">10</integer>
+	<!-- Screen brightness used to dim the screen while dozing in a very low power state.
+		May be less than the minimum allowed brightness setting
+		that can be set by the user. -->
+	<integer name="config_screenBrightnessDoze">1</integer> <!-- 8 -->
 
     <!-- Minimum allowable screen brightness to use in a very dark room.
          This value sets the floor for the darkest possible auto-brightness
@@ -110,7 +110,7 @@
          some range of adjustment to dim the screen further than usual in very
          dark rooms. The contents of the screen must still be clearly visible
          in darkness (although they may not be visible in a bright room). -->
-    <integer name="config_screenBrightnessDark">8</integer>
+    <integer name="config_screenBrightnessDark">4</integer> <!-- 24 -->
 
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
